@@ -286,7 +286,7 @@ n8n-nodes-campaignkit/
 ## Resources
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
-- [CampaignKit API Documentation](https://docs.campaignkit.cc)
+- [CampaignKit API Documentation](https://campaignkit.cc/docs)
 - [CampaignKit Dashboard](https://app.campaignkit.cc)
 - [CampaignKit Support](mailto:support@campaignkit.cc)
 
