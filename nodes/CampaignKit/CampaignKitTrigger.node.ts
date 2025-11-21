@@ -180,15 +180,33 @@ export class CampaignKitTrigger implements INodeType {
 		// Verify webhook signature
 		if (secret && req.headers['x-webhook-signature']) {
 			const signature = req.headers['x-webhook-signature'] as string;
-			const body = JSON.stringify(req.body);
+
+			// Get the raw body from Express request
+			// n8n stores the raw body in req.rawBody or req.body depending on configuration
+			const rawBody = (req as any).rawBody || (req as any).body;
+			let bodyString: string;
+
+			if (Buffer.isBuffer(rawBody)) {
+				// Raw body is a Buffer
+				bodyString = rawBody.toString('utf8');
+			} else if (typeof rawBody === 'string') {
+				// Raw body is already a string
+				bodyString = rawBody;
+			} else {
+				// Body has been parsed to object - stringify it
+				bodyString = JSON.stringify(req.body);
+			}
+
+			// Calculate expected signature
 			const expectedSignature = createHmac('sha256', secret)
-				.update(body)
+				.update(bodyString)
 				.digest('hex');
 
+			// Strict verification - fail if signatures don't match
 			if (signature !== expectedSignature) {
 				throw new NodeOperationError(
 					this.getNode(),
-					'Webhook signature verification failed',
+					`Webhook signature verification failed. Expected: ${expectedSignature}, Received: ${signature}`,
 				);
 			}
 		}
