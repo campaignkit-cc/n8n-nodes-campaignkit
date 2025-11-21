@@ -320,13 +320,13 @@ n8n start
 - Check [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
 - Ask in [n8n community forum](https://community.n8n.io)
 - Review [existing n8n community nodes](https://www.npmjs.com/search?q=keywords:n8n-community-node-package)
-- Contact CampaignKit support: support@campaignkit.email
+- Contact CampaignKit support: support@campaignkit.cc
 
 ## Resources
 
 - [n8n Node Development Documentation](https://docs.n8n.io/integrations/creating-nodes/)
 - [n8n Workflow Package API](https://github.com/n8n-io/n8n/tree/master/packages/workflow)
-- [CampaignKit API Documentation](https://docs.campaignkit.email)
+- [CampaignKit API Documentation](https://docs.campaignkit.cc)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 
 ## License

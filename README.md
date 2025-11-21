@@ -1,6 +1,6 @@
 # n8n-nodes-campaignkit
 
-This is an n8n community node for [CampaignKit Email Validation](https://campaignkit.email). It lets you validate email addresses and receive notifications when validation jobs complete in your n8n workflows.
+This is an n8n community node for [CampaignKit Email Validation](https://campaignkit.cc). It lets you validate email addresses and receive notifications when validation jobs complete in your n8n workflows.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
@@ -137,7 +137,7 @@ To use this node, you need a CampaignKit API key.
 
 ### Getting Your API Key
 
-1. Sign up for a [CampaignKit account](https://app.campaignkit.email)
+1. Sign up for a [CampaignKit account](https://app.campaignkit.cc)
 2. Navigate to **Settings** > **API Keys**
 3. Create a new API key or copy an existing one
 
@@ -225,7 +225,7 @@ Monitor your credit usage via the `/v1/account/billing/balance` endpoint or in y
 
 - Verify your API key is correct
 - Check that your CampaignKit account is active
-- Ensure the Base URL is correct (default: `https://api.campaignkit.email`)
+- Ensure the Base URL is correct (default: `https://api.campaignkit.cc`)
 
 ### Webhook Not Receiving Events
 
@@ -244,7 +244,7 @@ Monitor your credit usage via the `/v1/account/billing/balance` endpoint or in y
 
 - Check your account credit balance
 - Purchase additional credits in your CampaignKit dashboard
-- Contact support@campaignkit.email for billing assistance
+- Contact support@campaignkit.cc for billing assistance
 
 ## Development
 
@@ -286,9 +286,9 @@ n8n-nodes-campaignkit/
 ## Resources
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
-- [CampaignKit API Documentation](https://docs.campaignkit.email)
-- [CampaignKit Dashboard](https://app.campaignkit.email)
-- [CampaignKit Support](mailto:support@campaignkit.email)
+- [CampaignKit API Documentation](https://docs.campaignkit.cc)
+- [CampaignKit Dashboard](https://app.campaignkit.cc)
+- [CampaignKit Support](mailto:support@campaignkit.cc)
 
 ## Compatibility
 
@@ -313,5 +313,5 @@ n8n-nodes-campaignkit/
 
 For issues related to:
 - **This n8n node**: Open an issue on [GitHub](https://github.com/yourusername/CampaignKit/issues)
-- **CampaignKit API**: Contact support@campaignkit.email
+- **CampaignKit API**: Contact support@campaignkit.cc
 - **n8n platform**: Visit [n8n community forum](https://community.n8n.io)

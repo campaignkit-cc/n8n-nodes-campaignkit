@@ -8,7 +8,7 @@ import {
 export class CampaignKitApi implements ICredentialType {
 	name = 'campaignKitApi';
 	displayName = 'CampaignKit API';
-	documentationUrl = 'https://docs.campaignkit.email';
+	documentationUrl = 'https://docs.campaignkit.cc';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'API Key',
@@ -19,13 +19,13 @@ export class CampaignKitApi implements ICredentialType {
 			},
 			default: '',
 			required: true,
-			description: 'Your CampaignKit API key. You can find this in your account settings at https://app.campaignkit.email',
+			description: 'Your CampaignKit API key. You can find this in your account settings at https://app.campaignkit.cc/profile',
 		},
 		{
 			displayName: 'Base URL',
 			name: 'baseUrl',
 			type: 'string',
-			default: 'https://api.campaignkit.email',
+			default: 'https://api.campaignkit.cc',
 			required: true,
 			description: 'The base URL for CampaignKit API. Use the default unless instructed otherwise.',
 		},
