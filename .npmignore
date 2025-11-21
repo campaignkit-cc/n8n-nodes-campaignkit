@@ -1,0 +1,12 @@
+node_modules
+src
+credentials/**/*.ts
+nodes/**/*.ts
+types/**/*.ts
+tsconfig.json
+*.log
+.DS_Store
+.env
+.idea
+.vscode
+*.map
