@@ -7,7 +7,6 @@ import {
 	NodeOperationError,
 } from 'n8n-workflow';
 
-import { createHmac } from 'crypto';
 import { IWebhookPayload, IWebhookSubscription } from '../../types/CampaignKit.types';
 
 export class CampaignKitTrigger implements INodeType {
